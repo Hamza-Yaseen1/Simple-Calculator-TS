@@ -9,4 +9,7 @@ const answer = await inquirer.prompt([
     choices: ["Addition","Subtraction","Multiplication","Division"],
   },
 ]);
-console.log(answer);
+// Conditional Statement
+if(answer.operator === "Addition"){
+    console.log( answer.firstNumber + answer.secondNumber);
+}
